@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch A Sketch</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="top-panel">
-            <h1>Etch-A-Sketch</h1>
-            <p>Size: <span id="output"></span></p>
-            <div class="range-slider">
-                <input id="user-input" type="range" min="1" max="64" value="10" required class="my-slider">
-            </div>
+      <div id="top-panel">
+        <h1>Etch-A-Sketch</h1>
+        <p>Size: <span id="output"></span></p>
+        <div class="range-slider">
+          <input
+            id="user-input"
+            type="range"
+            min="1"
+            max="60"
+            value="10"
+            required
+            class="my-slider"
+          />
         </div>
+      </div>
     </header>
 
     <div id="container"></div>
 
     <button id="clear">Clear</button>
     <script type="text/javascript" src="app.js"></script>
-</body>
-
+  </body>
 </html>
-
-
 
 <!-- 
 TODO

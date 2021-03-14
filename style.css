@@ -1,88 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-     box-sizing: border-box;
-     scroll-behavior:smooth;
-     font-family: 'Yusei Magic', sans-serif;
-     letter-spacing: 0.06em;
-    }
-
-body{
-    background: linear-gradient(to right, #556270, #ff6b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Yusei Magic", sans-serif;
+  letter-spacing: 0.06em;
 }
 
-:root{
-    --grid-row-column: 7;
+body {
+  background: linear-gradient(
+    to right,
+    #556270,
+    #ff6b6b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #351f39;
+:root {
+  --grid-row-column: 7;
 }
 
-p{
-    padding-bottom: 0.5rem;
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #351f39;
 }
 
-h1{
-    font-size: 3rem;
+p {
+  padding-bottom: 0.5rem;
 }
 
-#container{
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(var(--grid-row-column),1fr);
-    grid-template-rows: repeat(var(--grid-row-column),1fr);
-    width: 25rem;
-    height: 35rem;
-    background-color: white;
-    cursor: crosshair;
-	background: #F8F8F8; 
-	border: solid #BDBDBD 1px; 
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+h1 {
+  font-size: 3rem;
+}
+
+#container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(var(--grid-row-column), 1fr);
+  grid-template-rows: repeat(var(--grid-row-column), 1fr);
+  /* width: 40rem; */
+  width: 80%;
+  height: 45rem;
+  background-color: white;
+  cursor: crosshair;
+  background: #f8f8f8;
+  border: solid #bdbdbd 1px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .my-slider {
-    -webkit-appearance: none;
-    background: #351f39  ;
-    width: 25rem;
-    height: 3px;
-    outline: none;
+  -webkit-appearance: none;
+  background: #351f39;
+  width: 30rem;
+  height: 3px;
+  outline: none;
 }
 
 .my-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    cursor: pointer;
-    background: #f9f7cf  ;
-    width: 5%;
-    height: 20px;
-    border-radius: 100%;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #f9f7cf;
+  width: 5%;
+  height: 20px;
+  border-radius: 2px;
 }
 
-.square{
-    border:0.1px solid rgb(211, 202, 193);
+.square {
+  border: 0.1px solid rgb(211, 202, 193);
 }
 
-#clear{
-    display: block;
-    width: 4rem;
-    height: 2rem;
-    margin: 1.5rem auto;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    background-color: thistle;
+#clear {
+  display: block;
+  width: 5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2rem;
+  margin: 2.5rem auto;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: thistle;
+  transition: all 0.3s ease;
 }
 
-#clear:hover{
-    background-color: wheat;
+#clear:hover {
+  background-color: wheat;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .my-slider {
+    width: 20rem;
+  }
+  #container {
+    height: 25rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #container {
+    width: 40rem;
+    height: 40rem;
+  }
 }
